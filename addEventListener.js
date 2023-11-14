@@ -14,7 +14,9 @@ function getCoordinates(event) {
 //  - Add the .addEventListener method.
 //  - The event type is "click".
 //  - The function should log whatever message you want to the console.
-
+consoleButton.addEventListener('click', function(){
+  console.log('pineapple')
+})
 
 // 2. Add the event listener for alertButton.
 //  - Select the variable.
@@ -24,6 +26,9 @@ function getCoordinates(event) {
 //  - Not sure how to alert something? Look here: https://www.w3schools.com/jsref/met_win_alert.asp 
 //  - Still not sure? Ask for support :)
 
+alertButton.addEventListener('click', function(){
+  alert('pizza')
+})
 
 
 // 3. Add the event listener for coordinateButton.
@@ -34,3 +39,4 @@ function getCoordinates(event) {
 //  - All you need to do is use the function name.
 //  - Check out the first example here if you get stuck: https://www.w3schools.com/jsref/met_document_addeventlistener.asp 
 
+coordinateButton.addEventListener('click', getCoordinates)
